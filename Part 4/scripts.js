@@ -13,7 +13,6 @@ for(var i=0; i<checkboxList.length; i++){
 }
 
 var addBtn = document.getElementById("addBtn");
-
 addBtn.addEventListener('click', function(){
 	var ul = document.querySelector("ul");
 	var input = document.getElementById("addInput")
