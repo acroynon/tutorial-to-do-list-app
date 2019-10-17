@@ -1,9 +1,9 @@
 
-// var checkbox = document.querySelector("input[type=checkbox]");
+var checkbox = document.querySelector("input[type=checkbox]");
 
-// checkbox.addEventListener('change', function() {
-//     console.log(this.checked)
-// });	
+checkbox.addEventListener('change', function() {
+    console.log(this.checked)
+});	
 
 
 //---------------------
