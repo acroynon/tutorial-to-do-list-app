@@ -1,10 +1,9 @@
 
-var checkbox = document.querySelector("input[type=checkbox]");
+// var checkbox = document.querySelector("input[type=checkbox]");
 
-checkbox.addEventListener('change', function() {
-    console.log(this.checked)
-});	
-
+// checkbox.addEventListener('change', function() {
+//     console.log(this.checked)
+// });	
 
 //---------------------
 
@@ -22,16 +21,16 @@ checkbox.addEventListener('change', function() {
 
 //---------------------
 
-// var checkboxList = document.querySelectorAll("input[type=checkbox]");
+var checkboxList = document.querySelectorAll("input[type=checkbox]");
 
-// for(var i=0; i<checkboxList.length; i++){
-// 	var checkbox = checkboxList[i];
-// 	checkbox.addEventListener('change', function() {
-// 	    var li = this.parentElement;
-// 	    if(this.checked){
-// 	    	li.style.textDecoration = "line-through"
-// 	    }else{
-// 	    	li.style.textDecoration = "none"
-// 	    }
-// 	});	
-// }
+for(var i=0; i<checkboxList.length; i++){
+	var checkbox = checkboxList[i];
+	checkbox.addEventListener('change', function() {
+	    var li = this.parentElement;
+	    if(this.checked){
+	    	li.style.textDecoration = "line-through"
+	    }else{
+	    	li.style.textDecoration = "none"
+	    }
+	});	
+}
